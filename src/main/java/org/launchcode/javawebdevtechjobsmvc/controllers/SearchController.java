@@ -40,7 +40,8 @@ public class SearchController {
         }
         model.addAttribute("jobs", jobs);
         model.addAttribute("columns", columnChoices);
-
+        String previousSearchType = searchType;
+        model.addAttribute("previousSearchType", previousSearchType);
         return "search";
     }
 }
